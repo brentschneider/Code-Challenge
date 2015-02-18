@@ -9,50 +9,38 @@ First UI Challenge, Contact List
 
 ##List Data:
 
-Christian   christian@yahoo.com
-            323-555-1234
+[Some fake people data](listData.md)
 
-            6539 Wilton Ave.
-            Culver City CA 90234
 
-Rich        rich@tripod.com
-            323-555-1234
+###UI Settings
 
-            6539 Wilton Ave.
-            Culver City CA 90234
+Width: 280px
+height: 398px
+Border radious: 12px;
+border: 4d4d4d / #4c4c4c - #292929 / 262626
 
-Scott       scott@mailinator.com
-            323-555-1234
 
-            6539 Wilton Ave.
-            Culver City CA 90234
+Header: 
+    #3d3d3d to #252525
+    height 50px
+    Note: fade just Inside above footer fade up: #111111
 
-danny       danny@hotmail.com
-            323-555-1234
+Footer:
+    bar: #202020
 
-            6539 Wilton Ave.
-            Culver City CA 90234
+Rows:
+    row: #212121  // slate
+    alt #1a1a1a   // dark
+    seperator #131313
 
-Taka        taka@myspace.com
-            323-555-1234
+    StatusOn: #00fe2c   // green
+    StatusOff: #ff0207  // Red
+    StatusAway: #c1bb1b // yellew
 
-            6539 Wilton Ave.
-            Culver City CA 90234
+    textRow1: #FFFFFF
+    textRow2: #585858
+    TextRow2 Hover: #fcfcfc
+    Note: Model effect
 
-Tim         tim@netscape.com
-            323-555-1234
-
-            6539 Wilton Ave.
-            Culver City CA 90234
-
-Patrick     patrick@live.com
-            323-555-1234
-
-            6539 Wilton Ave.
-            Culver City CA 90234
-
-Jacques     jacques@aol.com
-            323-555-1234
-
-            6539 Wilton Ave.
-            Culver City CA 90234
+Item hover: #484848 // background gray
+Item link: 08e7e2 // Blue
