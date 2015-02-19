@@ -13,18 +13,23 @@ First UI Challenge, Contact List
 [Some fake people data](listData.md)
 
 
-###Notes:
+###Dev Notes:
 
 Set up environment and templates [time: 40 min]
-Approached process building out the list [ time: 1.2 hours]
+
+Approached process building out the list [time: 1.2 hours]
 - Started the list using ul class="nav nav-pills", didn't seem to scale well 
 - Moved to a list-group with dropdowns using data-toggle="dropdown" function.
 
+Panel devvelopment [time: 1.2 hours]
+- Added the container panel, issue bug: Address border colors
+- Added a show status style/metod.
+  (Might move from div to css /* li:before {content:'\0BA5';} */ )
 
-###Todo:
 
-- Develop the container panel 
-- Develop a show status style/metod.
+####Todo:
+
+
 - Develop alt row and divider styles
 - Develop Swap content method per dropdown selection
 - Develop hover model style/method
@@ -35,7 +40,7 @@ Approached process building out the list [ time: 1.2 hours]
 - Mac chrome 40
 
 
-###UI Settings
+####UI Settings
 
 ```
 Width: 280px
