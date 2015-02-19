@@ -6,17 +6,44 @@
 First UI Challenge, Contact List 
 [repo](https://github.com/ff0000/skills-assessment)
 
+[raw image](https://github.com/ff0000/skills-assessment/blob/master/contactListUpdated.jpg)
 
 ##List Data:
 
 [Some fake people data](listData.md)
 
 
+###Notes:
+
+Set up environment and templates [time: 40 min]
+Approached process building out the list [ time: 1.2 hours]
+- Started the list using ul class="nav nav-pills", didn't seem to scale well 
+- Moved to a list-group with dropdowns using data-toggle="dropdown" function.
+
+
+###Todo:
+
+- Develop the container panel 
+- Develop a show status style/metod.
+- Develop alt row and divider styles
+- Develop Swap content method per dropdown selection
+- Develop hover model style/method
+
+  Test 
+- Mac Safari 8
+- Mac Firefox 34
+- Mac chrome 40
+
+
 ###UI Settings
 
+```
 Width: 280px
+
 height: 398px
+
 Border radious: 12px;
+
 border: 4d4d4d / #4c4c4c - #292929 / 262626
 
 
@@ -44,3 +71,4 @@ Rows:
 
 Item hover: #484848 // background gray
 Item link: 08e7e2 // Blue
+```
