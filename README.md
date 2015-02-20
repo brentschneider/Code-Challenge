@@ -15,25 +15,37 @@ First UI Challenge, Contact List
 
 [code example](http://www.milkshakeinteractive.com/code/FF0000challenge/ContactList.html)
 
-Set up environment and templates [time: 40 min]
 
-Approached process building out the list [time: 1.2 hours]
+####Development progress report
+
+On your mark.. get set... code!
+
+Set up environment and templates 
+[time: 40 min]
+
+Approached process building out the list [total time: 1.2 hours]
 - Started the list using ul class="nav nav-pills", didn't seem to scale well 
 - Moved to a list-group with dropdowns using data-toggle="dropdown" function.
+[total time: 1.2 hours, into project]
 
-Panel devvelopment [time: 1.2 hours]
+Panel devvelopment and list item
 - Added the container panel, issue bug: Address border colors
-- Added a show status style/metod.
-  (Might move from div to css /* li:before {content:'\0BA5';} */ )
+- Added a show status style/metod. (moveed from div to css /* li:before {} */ )
 - Added fade to bottom of list
-
 - In progress: hover model style/method
+[total time: 3 hours, into project]
+
+Cross browser bug testing
+ - FF bug; ::first-letter CSS pseudo-element selector
+ - Chrome bug; dropdown list margin alignment
+[total time: 5 hours, into project]
+
 
 ####Todo:
 
 - Develop: swap content method per dropdown selection
 - Develop: alt row and divider styles
-- Add fade to bottom of list
+
 
   Test 
 - Mac Safari 8
