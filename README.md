@@ -21,31 +21,30 @@ First UI Challenge, Contact List
 On your mark.. get set... code!
 
 Set up environment and templates 
-_[time: 40 min]_
+**[time: 40 min]**
 
 Approached process building out the list [total time: 1.2 hours]
 - Started the list using ul class="nav nav-pills", didn't seem to scale well 
 - Moved to a list-group with dropdowns using data-toggle="dropdown" function.
-_[total time: 1.2 hours, into project]_
+**[total time: 1.2 hours, into project]**
 
 Panel devvelopment and list item
 - Added the container panel, issue bug: Address border colors
 - Added a show status style/metod. (moveed from div to css /* li:before {} */ )
 - Added fade to bottom of list
 - In progress: hover model style/method
-_[total time: 3 hours, into project]_
+**[total time: 3 hours, into project]**
 
 Cross browser bug testing
  - FF bug; ::first-letter CSS pseudo-element selector
  - Chrome bug; dropdown list margin alignment
-_[total time: 5 hours, into project]_
+**[total time: 5 hours, into project]**
 
 
 ####Todo:
 
 - Develop: swap content method per dropdown selection
 - Develop: alt row and divider styles
-
 
   Test 
 - Mac Safari 8
