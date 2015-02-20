@@ -15,6 +15,8 @@ First UI Challenge, Contact List
 
 ###Dev Notes:
 
+[working file]
+
 Set up environment and templates [time: 40 min]
 
 Approached process building out the list [time: 1.2 hours]
@@ -25,14 +27,15 @@ Panel devvelopment [time: 1.2 hours]
 - Added the container panel, issue bug: Address border colors
 - Added a show status style/metod.
   (Might move from div to css /* li:before {content:'\0BA5';} */ )
+- Added fade to bottom of list
 
+- In progress: hover model style/method
 
 ####Todo:
 
-
-- Develop alt row and divider styles
-- Develop Swap content method per dropdown selection
-- Develop hover model style/method
+- Develop: swap content method per dropdown selection
+- Develop: alt row and divider styles
+- Add fade to bottom of list
 
   Test 
 - Mac Safari 8
