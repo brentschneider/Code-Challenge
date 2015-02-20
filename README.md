@@ -8,14 +8,12 @@ First UI Challenge, Contact List
 
 [raw image](https://github.com/ff0000/skills-assessment/blob/master/contactListUpdated.jpg)
 
-##List Data:
-
-[Some fake people data](listData.md)
+##List Data: [Some fake people data](listData.md){:target="_blank"}
 
 
 ###Dev Notes:
 
-[working file]
+[code example](http://www.milkshakeinteractive.com/code/FF0000challenge/ContactList.html)
 
 Set up environment and templates [time: 40 min]
 
