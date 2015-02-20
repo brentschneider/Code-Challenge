@@ -8,7 +8,7 @@ First UI Challenge, Contact List
 
 [raw image](https://github.com/ff0000/skills-assessment/blob/master/contactListUpdated.jpg)
 
-##List Data: [Some fake people data](listData.md){:target="_blank"}
+##List Data: [Some fake people data](listData.md)
 
 
 ###Dev Notes:
