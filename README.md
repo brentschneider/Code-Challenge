@@ -13,7 +13,7 @@ First UI Challenge, Contact List
 
 ###Dev Notes:
 
-[code example](http://www.milkshakeinteractive.com/code/FF0000challenge/ContactList.html)
+[code example](http://studentweb.ewu.edu/bschneider/FF0000/ContactList.html)
 
 
 ####Development progress report

@@ -75,22 +75,21 @@ a {
     height: 45px;
 }
 
-.alt{
+.list-group-item.alt{
     background-color: #1c1c1c !important;
 }
 
 .list-group-item:hover {
-    background-color: #484848;
+    background-color: #484848 !important;
+}
+
+.list-group-item:last-child:hover{
+    background: #484848 !important;
 }
 
 .list-group-item:last-child{
     background: 
      linear-gradient(0deg, #121212, transparent 20%), #282828;
-}
-
-.list-group-item:last-child:hover{
-    background: #484848;
-
 }
 
 .list-group-item:link a {
@@ -197,6 +196,4 @@ a {
     width:  280px;
 
     display: inline-block;
-
-
 }*/
