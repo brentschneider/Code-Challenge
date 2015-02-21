@@ -118,28 +118,30 @@ a {
     }*/
 
     .lname {
-        width: 7.5em;
+        width: 6em;
         display: inline-block;
         margin: 0;
         color: white;
         text-decoration: none;
     }
 
-    .lname:before {
-        content:'●';
+    .statusOn, .statusOff, .statusAway {
         padding-right: 1em;
     } 
 
-    .statusOn::first-letter {
+    .statusOn:after  {
+        content:'●';
         color: #00fe2c;
         display: inline-block;
     }
 
-     .statusOff::first-letter {
+     .statusOff:after {
+        content:'●';
         color: #ff0207;
         display: inline-block;
     }
-     .statusAway::first-letter {
+     .statusAway:after {
+        content:'●';
         color: #c1bb1b;
         display: inline-block;
     }

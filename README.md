@@ -13,7 +13,7 @@ First UI Challenge, Contact List
 
 ###Dev Notes:
 
-[code example](http://studentweb.ewu.edu/bschneider/FF0000/ContactList.html)
+[my code example](http://www.milkshakeinteractive.com/code/FF0000challenge/ContactList.html)
 
 
 ####Development progress report
@@ -40,11 +40,13 @@ Cross browser bug testing
  - Chrome bug; dropdown list margin alignment
 **[total time: 5 hours, into project]**
 
+Finishing visual style
+- Develop: alt row and divider styles
+
 
 ####Todo:
 
 - Develop: swap content method per dropdown selection
-- Develop: alt row and divider styles
 
   Test 
 - Mac Safari 8
