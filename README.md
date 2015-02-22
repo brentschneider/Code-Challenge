@@ -43,12 +43,18 @@ Cross browser bug testing
 Finishing visual style
 - Develop: alt row and divider styles
 
+Adding jquery functionality
+- Added swap content method per dropdown selection
+
+**[total time: 8 hours, into project]**
 
 ####Todo:
 
-- Develop: swap content method per dropdown selection
+- Bug list:
+  -- madel item list on item hover
+  -- last list item hover cuts off
 
-  Test 
+###Test 
 - Mac Safari 8
 - Mac Firefox 34
 - Mac chrome 40
