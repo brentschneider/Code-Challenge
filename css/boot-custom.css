@@ -27,6 +27,7 @@ a {
     display: inline-block;
 
     width: 280px;
+    overflow: hidden;
 }
 
 .panel-default>.panel-heading {
@@ -54,7 +55,7 @@ a {
     
 }
 
-.panel-footer{
+.panel-footer {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     background-color: #202020;
@@ -67,63 +68,61 @@ a {
     List item styles
 
 *************************************** */
+.list-group{
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 
 .list-group-item {
     border: 0 0 1px 0;
     border-color: #131313;
-    background-color: #282828;
     height: 45px;
+    background: url("../divider.png") no-repeat 105px 0px, #212121 !important; 
+
 }
 
-.list-group-item.alt{
+.list-group-item.alt {
     background-color: #1c1c1c !important;
 }
 
 .list-group-item:hover {
     background-color: #484848 !important;
+    background-image: none !important;;
 }
-
+.list-group-item:first-child {
+border-radius:none;
+}
 .list-group-item:last-child:hover{
     background: #484848 !important;
 }
 
-.list-group-item:last-child{
+.list-group-item:last-child {
     background: 
-     linear-gradient(0deg, #121212, transparent 20%), #282828;
+    linear-gradient(0deg, #121212, transparent 20%), #282828; /* modern browsers support */
+
+     /*
+        background: -webkit-linear-gradient(0deg, #121212 , #282828); /* For Safari 5.1 to 6.0 
+        background: -o-linear-gradient(0deg, #121212 , #282828); /* For Opera 11.1 to 12.0 
+        background: -moz-linear-gradient(0deg, #121212 , #282828); /* For Firefox 3.6 to 15 
+        background: linear-gradient(0deg, #121212 , #282828); /* Standard syntax 
+     */
 }
 
 .list-group-item:link a {
-    color: #565656;}
+    color: #565656;
+    text-decoration: underline;
+
+}
 
 .list-group-item:hover a {
     color: #08e7e2;
+    text-decoration: underline;
 }
 
-    /* StatusOn: #00fe2c   // green
-       StatusOff: #ff0207  // Red
-       StatusAway: #c1bb1b // yellew */
-
- /*   .dot {
-
-        background-color: slategray;
-        border: 1px solid slategray;
-        border-radius: 50%;
-        display: inline-block;
-        list-style-position: inside;
-
-        height: 8px;
-        /* top right bottom left 
-        margin: 0px 8px 0px 0px;
-        width: 8px;
-    }*/
-
-    .lname {
-        width: 6em;
-        display: inline-block;
-        margin: 0;
-        color: white;
-        text-decoration: none;
-    }
+    /* ==========================
+      inline status 
+    */
 
     .statusOn, .statusOff, .statusAway {
         padding-right: 1em;
@@ -144,6 +143,15 @@ a {
         content:'●';
         color: #c1bb1b;
         display: inline-block;
+    }
+
+    .lname {
+        width: 5.5em;
+        display: inline-block;
+        margin: 0;
+        color: white;
+        text-decoration: none;
+        
     }
 
 
@@ -169,15 +177,8 @@ a {
 
 .dropdown-menu li {
     /*visibility: visible;*/
-    margin-left: 1em;
+    margin-left: 1.3em;
     display: block;
-}
-.divider {
-    border-left:1px solid #1c1c1c;
-    height: 45px;
-    width: 2px;
-    padding: 0;
-    display: inline-block;
 }
 
 

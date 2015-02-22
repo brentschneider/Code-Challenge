@@ -11,7 +11,69 @@
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/boot-custom.css?=123" rel="stylesheet">
     
+<style>
 
+
+/* ***************************************
+    List item styles
+
+*************************************** */
+.list-group{
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.list-group-item {
+    border: 0 0 1px 0;
+    border-color: #131313;
+    height: 45px;
+    background: url("divider.png") no-repeat 105px 0px, #212121 !important; 
+
+}
+.list-group-item:nth-child(odd){
+    background-color: #1c1c1c !important;
+}
+.list-group-item:nth-child(even){
+    background-color: #212121 !important; 
+}
+
+
+.list-group-item:hover {
+    background-color: #484848 !important;
+    background-image: none !important;;
+}
+.list-group-item:first-child {
+border-radius:0;
+}
+.list-group-item:last-child:hover{
+    z-index: 99998;
+    background: #484848 !important;
+}
+
+.list-group-item:last-child {
+    background: 
+    linear-gradient(0deg, #121212, transparent 20%), #282828; /* modern browsers support */
+
+     /*
+        background: -webkit-linear-gradient(0deg, #121212 , #282828); /* For Safari 5.1 to 6.0 
+        background: -o-linear-gradient(0deg, #121212 , #282828); /* For Opera 11.1 to 12.0 
+        background: -moz-linear-gradient(0deg, #121212 , #282828); /* For Firefox 3.6 to 15 
+        background: linear-gradient(0deg, #121212 , #282828); /* Standard syntax 
+     */
+     border-radius: 0;
+}
+
+.list-group-item:link a {
+    color: #565656;
+    text-decoration: underline;
+}
+
+.list-group-item:hover a {
+    color: #08e7e2;
+    text-decoration: underline;
+}
+</style>
 </head>
 
 <body id="home">
@@ -19,90 +81,21 @@
     <div class="container cwidth">
 
 
+    <h1>Code Challenge</h1>
+
+    <p>Select an option from dropdown to load data.</p>
+
+
         <div class="panel panel-default ">
             <div class="panel-heading">Contacts</div>
-
-            <ul class="list-group">
-                <li class="list-group-item dropdown"><span class="statusOn"></span><span class="lname">Christian</span>
-                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">christian@yahoo.com</a>
-                    <ul class="dropdown-menu" id="menu1">
-                        <li>323-555-1234</li>
-                        <li>6539 Wilton Ave.</li>
-                        <li>Culver City CA 90234</li>
-                    </ul>
-                </li>
-                <li class="list-group-item alt dropdown">
-                    <span class="statusOn"></span><span class="lname">Rich</span>
-                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">rich@tripod.com</a>
-                    <ul class="dropdown-menu" id="menu2">
-                        <li>323-555-2121</li>
-                        <li>6539 Wilton Ave.</li>
-                        <li>Culver City CA 90234</li>
-                    </ul>
-                </li>
-                <li class="list-group-item dropdown">
-                    <span class="statusOn"></span><span class="lname">Scott</span>
-                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">scott@mailinator.com</a>
-                    <ul class="dropdown-menu" id="menu3">
-                        <li>323-555-1234</li>
-                        <li>6539 Wilton Ave.</li>
-                        <li>Culver City CA 90234</li>
-                    </ul>
-                </li>
-                <li class="list-group-item alt dropdown">
-                    <span class="statusOn"></span><span class="lname">danny</span>
-                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">danny@hotmail.com</a>
-                    <ul class="dropdown-menu" id="menu4">
-                        <li>323-876-5309</li>
-                        <li>6539 Wilton Ave.</li>
-                        <li>Culver City CA 90234</li>
-                    </ul>
-                </li>
-                <li class="list-group-item dropdown">
-                    <span class="statusOff"></span><span class="lname">Taka</span>
-                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">taka@myspace.com</a>
-                    <ul class="dropdown-menu" id="menu5">
-                        <li>323-555-1234</li>
-                        <li>6539 Wilton Ave.</li>
-                        <li>Culver City CA 90234</li>
-                    </ul>
-                </li>
-                <li class="list-group-item dropdown alt">
-                    <span class="statusAway"></span><span class="lname">Tim</span>
-                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">tim@netscape.com</a>
-                    <ul class="dropdown-menu" id="menu6">
-                        <li>323-555-1234</li>
-                        <li>6539 Wilton Ave.</li>
-                        <li>Culver City CA 90234</li>
-                    </ul>
-                </li>
-                <li class="list-group-item dropdown">
-                    <span class="statusOn"></span><span class="lname">Patrick</span>
-                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">patrick@live.com</a>
-                    <ul class="dropdown-menu" id="menu7">
-                        <li>323-555-1234</li>
-                        <li>6539 Wilton Ave.</li>
-                        <li>Culver City CA 90234</li>
-                    </ul>
-                </li>
-                <li class="list-group-item dropdown alt">
-                    <span class="statusAway"></span><span class="lname">Jacques</span>
-                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">jacques@aol.com</a>
-                    <ul class="dropdown-menu" id="menu8">
-                        <li>323-555-1234</li>
-                        <li>6539 Wilton Ave.</li>
-                        <li>Culver City CA 90234</li>
-                    </ul>
-                </li>
-            </ul>
-            
-            
-
+            <span id="dataPlaceHolder"></span>
             <div class="panel-footer">
-                <select class="right">
-                    <option value="volvo">Email address</option>
-                    <option value="saab">Phone number</option>
-                </select>
+            <form>
+              <select name="dropdownselect" class="right">
+                <option value="1" selected="selected">By email</option>
+                <option value="2">By phone number</option>
+              </select>
+            </form>
             </div>
 
         </div>
@@ -111,6 +104,158 @@
 
 
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+
+    <script>
+    $("select[name='dropdownselect']").change(function() {
+
+    var data = {
+        "users": [{
+                "userstatus":"statusOn",
+                "firstName": "Christian",
+                "email": "christian@yahoo.com",
+                "phone": "323-555-1234",
+                "address": {
+                    "add": "6539 Wilton Ave.",
+                    "city": "Culver City",
+                    "state": "CA",
+                    "zip": 90234
+                }
+            }, {
+                "userstatus":"statusOn",
+                "firstName": "Rich",
+                "email": "rich@tripod.com",
+                "phone": "323-876- 5309",
+                "address": {
+                    "add": "123 Cherry Ln.",
+                    "city": "Culver City",
+                    "state": "CA",
+                    "zip": 90234
+                }
+            }, {
+                "userstatus":"statusOn",
+                "firstName": "Scott",
+                "email": "scott@mailinator.com",
+                "phone": "432-123-1234",
+                "address": {
+                    "add": "6539 Wilton Ave.",
+                    "city": "Culver City",
+                    "state": "CA",
+                    "zip": 90234
+                }
+            }, {
+                "userstatus":"statusOn",
+                "firstName": "danny",
+                "email": "danny@hotmail.com",
+                "phone": "112-343-7890",
+                "address": {
+                    "city": "Culver City",
+                    "state": "CA",
+                    "zip": 90234
+                }
+            }, {
+                "userstatus":"statusOff",
+                "firstName": "Taka",
+                "email": "taka@myspace.com",
+                "phone": "876-112-7890",
+                "address": {
+                    "add": "6539 Wilton Ave.",
+                    "city": "Culver City",
+                    "state": "CA",
+                    "zip": 90234
+                }
+            }, {
+                "userstatus":"statusAway",
+                "firstName": "Tim",
+                "email": "tim@netscape.com",
+                "phone": "876-112-7890",
+                "address": {
+                    "add": "6539 Wilton Ave.",
+                    "city": "Culver City",
+                    "state": "CA",
+                    "zip": 90234
+                }
+            }, {
+                "userstatus":"statusOn",
+                "firstName": "Patrick",
+                "email": "patrick@live.com",
+                "phone": "323-876- 5309",
+                "address": {
+                    "add": "123 Cherry Ln.",
+                    "city": "Culver City",
+                    "state": "CA",
+                    "zip": 90234
+                }
+            }, {
+                "userstatus":"statusAway",
+                "firstName": "Jacques",
+                "email": "jacques@aol.com",
+                "phone": "323-555-1234",
+                "address": {
+                    "add": "6539 Wilton Ave.",
+                    "city": "Culver City",
+                    "state": "CA",
+                    "zip": 90234
+                }
+            }]
+        };
+
+            if($(this).val()==1){
+
+              var output="<ul class=\"list-group\">";
+
+                for (var i in data.users) {
+                    output+="<li class=\"list-group-item alt dropdown\">\n"
+                    + "<span class=\""+data.users[i].userstatus+"\"></span><span class=\"lname\">"
+                    + data.users[i].firstName + "</span>\n" 
+                    + "<a href=\"#\" data-toggle=\"dropdown\" class=\"dropdown-toggle\">"
+                    + data.users[i].email + "</a>\n"
+                    + "<ul class=\"dropdown-menu\" id=\"menu"+ [i]+"\">\n"
+                    + "<li>" + data.users[i].phone + "</li>\n"
+                    + "<li>" + data.users[i].address.add + "</li>"
+                    + "<li>" + data.users[i].address.city + ", "
+                    +  data.users[i].address.state + " "
+                    +  data.users[i].address.zip + "</li>"
+                    + "</ul>"
+                    + "</li>"
+                };
+
+              output+="</ul>";
+
+              document.getElementById("dataPlaceHolder").innerHTML=output;
+            };
+
+            
+
+            if($(this).val()==2){
+              var output="<ul class=\"list-group\">";
+
+                for (var i in data.users) {
+                    output+="<li class=\"list-group-item alt dropdown\">\n"
+                    + "<span class=\""+data.users[i].userstatus+"\"></span><span class=\"lname\">"
+                    + data.users[i].firstName + "</span>\n" 
+                    + "<a href=\"#\" data-toggle=\"dropdown\" class=\"dropdown-toggle\">"
+                    + data.users[i].phone + "</a>\n"
+                    + "<ul class=\"dropdown-menu\" id=\"menu"+ [i]+"\">\n"
+                    + "<li>" + data.users[i].email + "</li>\n"
+                    + "<li>" + data.users[i].address.add + "</li>"
+                    + "<li>" + data.users[i].address.city + ", "
+                    +  data.users[i].address.state + " "
+                    +  data.users[i].address.zip + "</li>"
+                    + "</ul>"
+                    + "</li>"
+                };
+
+              output+="</ul>";
+
+              document.getElementById("dataPlaceHolder").innerHTML=output;
+            }
+
+        });
+    </script>
+
+
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
 
