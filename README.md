@@ -51,7 +51,7 @@ Adding jquery functionality
 ####Todo:
 
 - Bug list:
-  -- madel item list on item hover
+  -- model darken background on item list hover
   -- last list item hover cuts off
 
 ###Test 
