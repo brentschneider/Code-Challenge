@@ -12,142 +12,146 @@ a {
     Panel container styles
 
 *************************************** */
-.panel{
+    .panel{
 
-    background-color: #000000;
-}
+        background-color: #000000;
+    }
 
-.panel-default {
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-    border-bottom-left-radius: 14px;
-    border-bottom-right-radius: 14px;
-    
-    border: 2px solid #444444;
-    display: inline-block;
+    .panel-default {
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
+        
+        border: 2px solid #444444;
+        display: inline-block;
 
-    width: 280px;
-    
-}
+        width: 295px;
+        
+    }
 
-.panel-default>.panel-heading {
-    color: #ededed;
-    font-weight: medium;
-    font-size: 1.2em;
+    .panel-default>.panel-heading {
+        color: #ededed;
+        font-weight: medium;
+        font-size: 1.2em;
 
-    background: 
-     linear-gradient(#3d3d3d, transparent 60%),
-     linear-gradient(0deg, #242424, transparent), #282828;
-}
+        background: 
+         linear-gradient(#3d3d3d, transparent 60%),
+         linear-gradient(0deg, #242424, transparent), #282828;
+    }
 
-.panel-heading {
-    color: white;
-    padding: 15px 25px;
-    
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-color: #131313;
+    .panel-heading {
+        color: white;
+        padding: 15px 25px;
+        
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-color: #131313;
 
-    border-bottom:1px solid #131313 !important;
-}
+        border-bottom:1px solid #131313 !important;
+    }
 
-.panel-footer {
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    background-color: #202020;
+    .panel-footer {
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        background-color: #202020;
 
-    height: 45px;
-    border-top: none;
-    z-index: -999;
-}
+        height: 45px;
+        border-top: none;
+        z-index: -999;
+    }
 
 
 /* ***************************************
     List item styles
 *************************************** */
 
-.list-group{
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-.list-group-item {
-    border: 0 0 1px 0;
-    border-color: #131313;
-    height: 45px;
-    background: url("divider.png") no-repeat 105px 0px, #212121; 
-
-}
-.list-group-item:nth-child(odd){
-    background-color: #1c1c1c !important;
-}
-.list-group-item:nth-child(even){
-    background-color: #212121 !important; 
-}
-
-.list-group-item:hover {
-    background-color: #484848 !important;
-    background-image: none;
-}
-.list-group-item:first-child {
-border-radius:0;
-}
-.list-group-item:last-child:hover{
-    
-    background: #484848 !important;
-}
-
-.list-group-item:last-child {
-    background:
-    url("divider.png") no-repeat 105px 0px, 
-    linear-gradient(0deg, #1c1c1c 4%, transparent 20%), #212121 100% !important;
-    -moz-linear-gradient(0deg, rgba(30,30,30,.6) 0%, transparent 20%), rgba(30,30,30,1) !important; /* modern browsers support */
-     border-radius: 0;
-}
-
-.list-group-item:link a {
-    color: #565656;
-    text-decoration: underline;
-}
-
-.list-group-item:hover a {
-    color: #08e7e2;
-    text-decoration: underline;
-}
-
-    /* ==========================
-      inline status 
-    */
-
-    .statusOn, .statusOff, .statusAway {
-        padding-right: 1em;
-    } 
-
-    .statusOn:after  {
-        content:'●';
-        color: #00fe2c;
-        display: inline-block;
+    .list-group{
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
-
-     .statusOff:after {
-        content:'●';
-        color: #ff0207;
-        display: inline-block;
-    }
-     .statusAway:after {
-        content:'●';
-        color: #c1bb1b;
-        display: inline-block;
-    }
-
-    .lname {
-        width: 5.5em;
-        display: inline-block;
+    .list-group-item {
+        border: 0 0 1px 0;
+        border-color: #131313;
         margin: 0;
-        color: white;
-        text-decoration: none;
-        
+        height: 45px;
+        background: url("../divider.png") no-repeat 105px 0px, #212121 !important; 
+
     }
 
+    .list-group-item:first-child {
+    border-radius:0;
+    }
+
+    .list-group-item:nth-child(odd){
+        background-color: #1c1c1c !important;
+    }
+    .list-group-item:nth-child(even){
+        background-color: #212121 !important; 
+    }
+
+    .list-group-item:hover {
+        background-color: #484848 !important;
+        background-image: none !important;
+        margin: 0;
+    }
+
+    .list-group-item:last-child:hover{
+        
+        background: #484848 !important;
+    }
+
+    .list-group-item:last-child {
+        background:
+        url("../divider.png") no-repeat 105px 0px,
+        linear-gradient(0deg, #1c1c1c 4%, transparent 20%), #212121 100% !important;
+        -moz-linear-gradient(0deg, rgba(30,30,30,.6) 0%, transparent 20%), rgba(30,30,30,1) !important;
+         border-radius: 0;
+    }
+
+    .list-group-item:link a {
+        color: #565656;
+        text-decoration: underline;
+    }
+
+    .list-group-item:hover a {
+        color: #08e7e2;
+        text-decoration: underline;
+    }
+
+/* ==========================
+  inline status 
+*/
+
+.statusOn, .statusOff, .statusAway {
+    padding-right: 1em;
+} 
+
+.statusOn:after  {
+    content:'●';
+    color: #00fe2c;
+    display: inline-block;
+}
+
+ .statusOff:after {
+    content:'●';
+    color: #ff0207;
+    display: inline-block;
+}
+ .statusAway:after {
+    content:'●';
+    color: #c1bb1b;
+    display: inline-block;
+}
+
+.lname {
+    width: 5.5em;
+    display: inline-block;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    
+}
 
 
 /* ***************************************
@@ -161,13 +165,15 @@ border-radius:0;
 
 .dropdown-menu{
     color: #ededed;
+    border-radius: 0;
     margin-top: 0;
-    padding-top: 0px;
     margin-left: 7.5em;
+    margin-right: 1px;
+    padding-top: 0px;
     background-color: #484848;
     border-radius: 0;
     border-top: 1px solid #484848;
-    width:12.3em;
+    width:13.2em;
     z-index: 999
 }
 
@@ -185,7 +191,6 @@ border-radius:0;
 
 
 
-
 .right {
     float: right;
     margin-right: 12px
@@ -194,6 +199,7 @@ form {
     z-index: -129;
     display:block;
 }
+
 
 /*.modal {
     position: relative;

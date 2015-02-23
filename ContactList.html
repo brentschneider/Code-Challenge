@@ -1,10 +1,11 @@
 <!doctype html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+    <meta name="author" content="Brent Schneider">
 
     <title>Best site ever</title>
 
@@ -12,194 +13,64 @@
     <link href="css/boot-custom.css?=123" rel="stylesheet">
     
 <style>
-
-
 /* ***************************************
-    List item styles
+    
+    Code challenge notes: 
+    repo @ https://github.com/brentschneider/Code-Challenge
+
+   ***************************************
+
+  > Twitter bootstrap as a base framework
+  > List data items loaded from:; listdata.js
+  > Custom css contained in: boot-custom.css
+
+    
+    - The list is populated via data pulled from listdata.js
+        > Second iteration: 
+            - Separate the select dropdown options into separate functions.
+            -  I noticed the event handler .change only executes after the second value is 
+               selected. (has to be another method for this?) 
+
+    - Using CDN linked files are NOT safe for off line apps...
+        > Second iteration: 
+            - I'd pull just the needed css classes and jquery functions into local file structure
+
+        Found this interesting article: http://alistapart.com/article/offline-first
+        and this site: http://offlinefirst.org/
+
+    - Able to complete using only 1 image, divider.png (941 bytes)
+
+
 *************************************** */
-
-
 </style>
 </head>
-
 <body id="home">
 
     <div class="container cwidth">
 
-
-    <h1>Code Challenge</h1>
-
+    <h1>Code Challenge:</h1>
     <p>Select an option from dropdown to load data.</p>
-
-
 
         <div class="panel panel-default ">
             <div class="panel-heading">Contacts</div>
             <span id="dataPlaceHolder"></span>
             <div class="panel-footer">
-            <form>
+
+            <form>            
               <select name="dropdownselect" class="right">
                 <option value="1" selected="selected">By email</option>
                 <option value="2">By phone number</option>
               </select>
             </form>
-            </div>
 
+            </div>
         </div>
         <div class="modal"></div>
     </div>
 
-
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="listdata.js"></script>
 
-    <script>
-    $("select[name='dropdownselect']").change(function() {
-
-    var data = {
-        "users": [{
-                "userstatus":"statusOn",
-                "firstName": "Christian",
-                "email": "christian@yahoo.com",
-                "phone": "323-555-1234",
-                "address": {
-                    "add": "6539 Wilton Ave.",
-                    "city": "Culver City",
-                    "state": "CA",
-                    "zip": 90234
-                }
-            }, {
-                "userstatus":"statusOn",
-                "firstName": "Rich",
-                "email": "rich@tripod.com",
-                "phone": "323-876- 5309",
-                "address": {
-                    "add": "123 Cherry Ln.",
-                    "city": "Culver City",
-                    "state": "CA",
-                    "zip": 90234
-                }
-            }, {
-                "userstatus":"statusOn",
-                "firstName": "Scott",
-                "email": "scott@mailinator.com",
-                "phone": "432-123-1234",
-                "address": {
-                    "add": "6539 Wilton Ave.",
-                    "city": "Culver City",
-                    "state": "CA",
-                    "zip": 90234
-                }
-            }, {
-                "userstatus":"statusOn",
-                "firstName": "danny",
-                "email": "danny@hotmail.com",
-                "phone": "112-343-7890",
-                "address": {
-                    "city": "Culver City",
-                    "state": "CA",
-                    "zip": 90234
-                }
-            }, {
-                "userstatus":"statusOff",
-                "firstName": "Taka",
-                "email": "taka@myspace.com",
-                "phone": "876-112-7890",
-                "address": {
-                    "add": "6539 Wilton Ave.",
-                    "city": "Culver City",
-                    "state": "CA",
-                    "zip": 90234
-                }
-            }, {
-                "userstatus":"statusAway",
-                "firstName": "Tim",
-                "email": "tim@netscape.com",
-                "phone": "876-112-7890",
-                "address": {
-                    "add": "6539 Wilton Ave.",
-                    "city": "Culver City",
-                    "state": "CA",
-                    "zip": 90234
-                }
-            }, {
-                "userstatus":"statusOn",
-                "firstName": "Patrick",
-                "email": "patrick@live.com",
-                "phone": "323-876- 5309",
-                "address": {
-                    "add": "123 Cherry Ln.",
-                    "city": "Culver City",
-                    "state": "CA",
-                    "zip": 90234
-                }
-            }, {
-                "userstatus":"statusAway",
-                "firstName": "Jacques",
-                "email": "jacques@aol.com",
-                "phone": "323-555-1234",
-                "address": {
-                    "add": "6539 Wilton Ave.",
-                    "city": "Culver City",
-                    "state": "CA",
-                    "zip": 90234
-                }
-            }]
-        };
-
-            if($(this).val()==1){
-
-              var output="<ul class=\"list-group\">";
-
-                for (var i in data.users) {
-                    output+="<li class=\"list-group-item alt dropdown\">\n"
-                    + "<span class=\""+data.users[i].userstatus+"\"></span><span class=\"lname\">"
-                    + data.users[i].firstName + "</span>\n" 
-                    + "<a href=\"mailto:"+data.users[i].email+"\" data-toggle=\"dropdown\" class=\"dropdown-toggle\">"
-                    + data.users[i].email + "</a>\n"
-                    + "<ul class=\"dropdown-menu\" id=\"menu"+ [i]+"\">\n"
-                    + "<li>" + data.users[i].phone + "</li>\n"
-                    + "<li>" + data.users[i].address.add + "</li>"
-                    + "<li>" + data.users[i].address.city + ", "
-                    +  data.users[i].address.state + " "
-                    +  data.users[i].address.zip + "</li>"
-                    + "</ul>"
-                    + "</li>"
-                };
-
-              output+="</ul>";
-
-              document.getElementById("dataPlaceHolder").innerHTML=output;
-            };
-
-            
-
-            if($(this).val()==2){
-              var output="<ul class=\"list-group\">";
-
-                for (var i in data.users) {
-                    output+="<li class=\"list-group-item alt dropdown\">\n"
-                    + "<span class=\""+data.users[i].userstatus+"\"></span><span class=\"lname\">"
-                    + data.users[i].firstName + "</span>\n" 
-                    + "<a href=\"tel:"+data.users[i].phone+"\" data-toggle=\"dropdown\" class=\"dropdown-toggle\">"
-                    + data.users[i].phone + "</a>\n"
-                    + "<ul class=\"dropdown-menu\" id=\"menu"+ [i]+"\">\n"
-                    + "<li>" + data.users[i].email + "</li>\n"
-                    + "<li>" + data.users[i].address.add + "</li>"
-                    + "<li>" + data.users[i].address.city + ", "
-                    +  data.users[i].address.state + " "
-                    +  data.users[i].address.zip + "</li>"
-                    + "</ul>"
-                    + "</li>"
-                };
-
-              output+="</ul>";
-
-              document.getElementById("dataPlaceHolder").innerHTML=output;
-            }
-
-        });
-    </script>
 </body>
-
 </html>

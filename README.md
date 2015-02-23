@@ -2,13 +2,8 @@
 
 #Code challenge excepted!
 
-
-First UI Challenge, Contact List 
+Code Challenge: FF0000 Contact List 
 [repo](https://github.com/ff0000/skills-assessment)
-
-[raw image](https://github.com/ff0000/skills-assessment/blob/master/contactListUpdated.jpg)
-
-##List Data: [Some fake people data](listData.md)
 
 
 ###Dev Notes:
@@ -53,18 +48,21 @@ added mailto: & tell: to data output
 
 **[total time: 8.5 hours, into project]**
 
-####Todo:
 
-- Bug list:
+##List Data: [Some fake people data](listData.md)
+
+
+###Bug list:
   -- model darken background on item list hover
   
 
-###Test 
+###Test ed on:
 - Mac Safari 8
 - Mac Firefox 34
 - Mac chrome 40
 - PC IE 7
 - PC FF 35
+- Android Chrome
 
 
 
