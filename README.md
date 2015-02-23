@@ -48,11 +48,16 @@ Adding jquery functionality
 
 **[total time: 8 hours, into project]**
 
+bug fix: fixed submenu hidden behind content
+added mailto: & tell: to data output
+
+**[total time: 8.5 hours, into project]**
+
 ####Todo:
 
 - Bug list:
   -- model darken background on item list hover
-  -- last list item hover cuts off
+  
 
 ###Test 
 - Mac Safari 8

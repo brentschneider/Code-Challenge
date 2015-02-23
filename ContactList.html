@@ -16,63 +16,9 @@
 
 /* ***************************************
     List item styles
-
 *************************************** */
-.list-group{
-    overflow: hidden;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.list-group-item {
-    border: 0 0 1px 0;
-    border-color: #131313;
-    height: 45px;
-    background: url("divider.png") no-repeat 105px 0px, #212121; 
-
-}
-.list-group-item:nth-child(odd){
-    background-color: #1c1c1c;
-}
-.list-group-item:nth-child(even){
-    background-color: #212121; 
-}
 
 
-.list-group-item:hover {
-    background-color: #484848;
-    background-image: none;;
-}
-.list-group-item:first-child {
-border-radius:0;
-}
-.list-group-item:last-child:hover{
-    z-index: 99998;
-    background: #484848;
-}
-
-.list-group-item:last-child {
-    background: 
-    linear-gradient(0deg, #121212, transparent 20%), #282828; /* modern browsers support */
-
-     /*
-        background: -webkit-linear-gradient(0deg, #121212 , #282828); /* For Safari 5.1 to 6.0 
-        background: -o-linear-gradient(0deg, #121212 , #282828); /* For Opera 11.1 to 12.0 
-        background: -moz-linear-gradient(0deg, #121212 , #282828); /* For Firefox 3.6 to 15 
-        background: linear-gradient(0deg, #121212 , #282828); /* Standard syntax 
-     */
-     border-radius: 0;
-}
-
-.list-group-item:link a {
-    color: #565656;
-    text-decoration: underline;
-}
-
-.list-group-item:hover a {
-    color: #08e7e2;
-    text-decoration: underline;
-}
 </style>
 </head>
 
@@ -84,6 +30,7 @@ border-radius:0;
     <h1>Code Challenge</h1>
 
     <p>Select an option from dropdown to load data.</p>
+
 
 
         <div class="panel panel-default ">
@@ -104,8 +51,7 @@ border-radius:0;
 
 
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     <script>
     $("select[name='dropdownselect']").change(function() {
@@ -209,7 +155,7 @@ border-radius:0;
                     output+="<li class=\"list-group-item alt dropdown\">\n"
                     + "<span class=\""+data.users[i].userstatus+"\"></span><span class=\"lname\">"
                     + data.users[i].firstName + "</span>\n" 
-                    + "<a href=\"#\" data-toggle=\"dropdown\" class=\"dropdown-toggle\">"
+                    + "<a href=\"mailto:"+data.users[i].email+"\" data-toggle=\"dropdown\" class=\"dropdown-toggle\">"
                     + data.users[i].email + "</a>\n"
                     + "<ul class=\"dropdown-menu\" id=\"menu"+ [i]+"\">\n"
                     + "<li>" + data.users[i].phone + "</li>\n"
@@ -235,7 +181,7 @@ border-radius:0;
                     output+="<li class=\"list-group-item alt dropdown\">\n"
                     + "<span class=\""+data.users[i].userstatus+"\"></span><span class=\"lname\">"
                     + data.users[i].firstName + "</span>\n" 
-                    + "<a href=\"#\" data-toggle=\"dropdown\" class=\"dropdown-toggle\">"
+                    + "<a href=\"tel:"+data.users[i].phone+"\" data-toggle=\"dropdown\" class=\"dropdown-toggle\">"
                     + data.users[i].phone + "</a>\n"
                     + "<ul class=\"dropdown-menu\" id=\"menu"+ [i]+"\">\n"
                     + "<li>" + data.users[i].email + "</li>\n"
@@ -254,9 +200,6 @@ border-radius:0;
 
         });
     </script>
-
-
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>

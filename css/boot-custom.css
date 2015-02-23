@@ -42,17 +42,13 @@ a {
 
 .panel-heading {
     color: white;
-
     padding: 15px 25px;
     
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-
-    border-width: 1px;
     border-color: #131313;
 
     border-bottom:1px solid #131313 !important;
-    
 }
 
 .panel-footer {
@@ -62,58 +58,55 @@ a {
 
     height: 45px;
     border-top: none;
+    z-index: -999;
 }
 
 
 /* ***************************************
     List item styles
-
 *************************************** */
+
 .list-group{
-    overflow: hidden;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-
 .list-group-item {
     border: 0 0 1px 0;
     border-color: #131313;
     height: 45px;
-    background: url("../divider.png") no-repeat 105px 0px, #212121 !important; 
+    background: url("divider.png") no-repeat 105px 0px, #212121; 
 
 }
-
-.list-group-item.alt {
+.list-group-item:nth-child(odd){
     background-color: #1c1c1c !important;
+}
+.list-group-item:nth-child(even){
+    background-color: #212121 !important; 
 }
 
 .list-group-item:hover {
     background-color: #484848 !important;
-    background-image: none !important;;
+    background-image: none;
 }
 .list-group-item:first-child {
-border-radius:none;
+border-radius:0;
 }
 .list-group-item:last-child:hover{
+    
     background: #484848 !important;
 }
 
 .list-group-item:last-child {
-    background: 
-    linear-gradient(0deg, #121212, transparent 20%), #282828; /* modern browsers support */
-
-     /*
-        background: -webkit-linear-gradient(0deg, #121212 , #282828); /* For Safari 5.1 to 6.0 
-        background: -o-linear-gradient(0deg, #121212 , #282828); /* For Opera 11.1 to 12.0 
-        background: -moz-linear-gradient(0deg, #121212 , #282828); /* For Firefox 3.6 to 15 
-        background: linear-gradient(0deg, #121212 , #282828); /* Standard syntax 
-     */
+    background:
+    url("divider.png") no-repeat 105px 0px, 
+    linear-gradient(0deg, #1c1c1c 4%, transparent 20%), #212121 100% !important;
+    -moz-linear-gradient(0deg, rgba(30,30,30,.6) 0%, transparent 20%), rgba(30,30,30,1) !important; /* modern browsers support */
+     border-radius: 0;
 }
 
 .list-group-item:link a {
     color: #565656;
     text-decoration: underline;
-
 }
 
 .list-group-item:hover a {
@@ -156,6 +149,7 @@ border-radius:none;
     }
 
 
+
 /* ***************************************
     Hover / drop down item styles
 
@@ -174,6 +168,7 @@ border-radius:none;
     border-radius: 0;
     border-top: 1px solid #484848;
     width:12.3em;
+    z-index: 999
 }
 
 .dropdown-menu li {
@@ -181,6 +176,14 @@ border-radius:none;
     margin-left: 1.3em;
     display: block;
 }
+.dropdown:hover{
+
+    position: relative;
+    z-index: 999;
+
+}
+
+
 
 
 .right {
@@ -188,7 +191,8 @@ border-radius:none;
     margin-right: 12px
 }
 form {
-    z-index: -129
+    z-index: -129;
+    display:block;
 }
 
 /*.modal {
