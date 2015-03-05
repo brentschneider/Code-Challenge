@@ -8,6 +8,8 @@ a {
 }
 
 
+
+
 /* ***************************************
     Panel container styles
 
@@ -62,6 +64,8 @@ a {
     }
 
 
+
+
 /* ***************************************
     List item styles
 *************************************** */
@@ -86,6 +90,7 @@ a {
     .list-group-item:nth-child(odd){
         background-color: #1c1c1c !important;
     }
+
     .list-group-item:nth-child(even){
         background-color: #212121 !important; 
     }
@@ -119,9 +124,13 @@ a {
         text-decoration: underline;
     }
 
-/* ==========================
+
+
+
+
+/* ***************************************
   inline status 
-*/
+*************************************** */
 
 .statusOn, .statusOff, .statusAway {
     padding-right: 1em;
@@ -133,12 +142,13 @@ a {
     display: inline-block;
 }
 
- .statusOff:after {
+.statusOff:after {
     content:'●';
     color: #ff0207;
     display: inline-block;
 }
- .statusAway:after {
+
+.statusAway:after {
     content:'●';
     color: #c1bb1b;
     display: inline-block;
@@ -154,9 +164,10 @@ a {
 }
 
 
+
+
 /* ***************************************
     Hover / drop down item styles
-
 *************************************** */
 
 .dropdown:hover .dropdown-menu {
@@ -173,7 +184,8 @@ a {
     background-color: #484848;
     border-radius: 0;
     border-top: 1px solid #484848;
-    width:13.2em;
+    border-right: 1px solid #484848;
+    width:13.121em;
     z-index: 999
 }
 
@@ -188,8 +200,6 @@ a {
     z-index: 999;
 
 }
-
-
 
 .right {
     float: right;
