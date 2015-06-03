@@ -46,8 +46,10 @@ Adding jquery functionality
 bug fix: fixed submenu hidden behind content
 added mailto: & tell: to data output
 
+
 **[total time: 8.5 hours, into project]**
 
+---
 
 ##List Data: [Some fake people data](listData.md)
 
@@ -56,7 +58,7 @@ added mailto: & tell: to data output
   -- model darken background on item list hover
   
 
-###Test ed on:
+###Tested on:
 - Mac Safari 8
 - Mac Firefox 34
 - Mac chrome 40
